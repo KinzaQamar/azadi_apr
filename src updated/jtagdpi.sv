@@ -36,7 +36,8 @@ module jtagdpi #(
 
   final begin
     jtagdpi_close(ctx);
-    ctx = 0;
+    //ctx=0;
+    $cast (ctx,0);
   end
 
   always_ff @(posedge clk_i, negedge rst_ni) begin

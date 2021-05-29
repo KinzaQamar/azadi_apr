@@ -551,8 +551,8 @@ module brq_cs_registers #(
         CSR_FCSR: begin 
           fflags_en = 1'b1;
           frm_en    = 1'b1;
-          fflags_d  = csr_wdata_int[4:0];
-          frm_d     = csr_wdata_int[7:5];  
+          fflags_d  = fpnew_pkg::status_t'(csr_wdata_int[4:0]);
+          frm_d     = roundmode_e'(csr_wdata_int[2:0]);
         end
         
 

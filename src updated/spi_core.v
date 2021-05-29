@@ -13,8 +13,8 @@ module spi_core
   input         we_i,       
   input         re_i,        
   output        error_o,       
-  output        intr_rx_o,
-  output        intr_tx_o,         
+  output   reg     intr_rx_o,
+  output   reg     intr_tx_o,         
                                                      
   // SPI signals                                     
   output          [`SPI_SS_NB-1:0] ss_o,         // slave select

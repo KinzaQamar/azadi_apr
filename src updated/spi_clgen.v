@@ -1,6 +1,6 @@
 // `include "/home/merl/github_repos/azadi/src/spi_host/rtl/spi_defines.v"
 //`include "/home/zeeshan/fyp/azadi/src/spi_host/rtl/spi_defines.v"
-
+`include "spi_defines.v"
 module spi_clgen (
   input                            clk_in,   // input clock (system clock)
   input                            rst,      // reset

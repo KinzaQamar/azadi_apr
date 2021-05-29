@@ -96,13 +96,13 @@ module i2c_master_core(
 	output [7:0] rdata_o;   // databus output
 	input        we_i;      // write enable input
 	input        ren_i;     // stobe/core select signal
-	output       error_o;
+	output   error_o;
 	input  [3:0] ben_i;
 	output       intra_o;   // interrupt request signal output
 
 	reg [7:0] rdata_o;
 	reg intra_o;
-	reg error_o;
+	wire  error_o;
 
 	// I2C signals
 	// i2c clock line

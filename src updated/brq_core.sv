@@ -1,3 +1,4 @@
+`include "fpnew_pkg.sv"
 `ifdef RISCV_FORMAL
   `define RVFI
 `endif

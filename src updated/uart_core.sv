@@ -4,7 +4,7 @@
 //
 // Description: UART core module
 //
-
+`include "uart_reg_pkg.sv"
 module uart_core (
   input                  clk_i,
   input                  rst_ni,
@@ -25,7 +25,7 @@ module uart_core (
   output logic           intr_rx_parity_err_o
 );
 
-  import uart_reg_pkg::*;
+  //import uart_reg_pkg::*;
 
   localparam int NcoWidth = $bits(reg2hw.ctrl.nco.q);
 

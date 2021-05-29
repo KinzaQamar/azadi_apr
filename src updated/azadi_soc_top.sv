@@ -1,4 +1,9 @@
- 
+`include "dm.sv"
+`include "spi_defines.v"
+`include "tl_main_pkg.sv"
+`include "brq_pkg.sv"
+`include "jtag_pkg.sv"
+`include "tlul_pkg.sv"
 module azadi_soc_top #(
   
   parameter logic [31:0] JTAG_ID = 32'h 0000_0001,
